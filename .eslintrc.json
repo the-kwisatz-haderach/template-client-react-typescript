@@ -1,0 +1,31 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": [
+    "standard",
+    "standard-react",
+    "plugin:jest/recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["react", "prettier", "@typescript-eslint", "jest"],
+  "rules": {
+    "react/prop-types": "off",
+    "react/destructuring-assignment": "error",
+    "@typescript-eslint/member-delimiter-style": "off"
+  }
+}
